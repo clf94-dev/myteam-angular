@@ -1,0 +1,25 @@
+<div class="card-col" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="33%" fxFlex.lg="33%" style=" max-width: 100%;">
+    <div class="info-card1 {{card1Classes}}">
+        <img class='avatar' src="{{src}}" alt="{{ImgAlt}}" />
+
+        <p class='name'>{{name}}
+        </p>
+
+        <p class='position'>{{position}}
+        </p>
+    </div>
+    <div class="info-card2 {{card2Classes}}">
+        <p class='name'>{{name}}
+        </p>
+        <p class='description'>{{description}}</p>
+        <div class="social-row" fxLayout='row wrap'>
+            <i class='fab fa-2x fa-twitter'></i>
+            <i class='fab fa-2x fa-linkedin'></i>
+        </div>
+
+    </div>
+    <button (click)="changeState()" class="{{classes}}">
+        <img src="{{imgSrc}}" alt="{{imgAlt}}">
+       
+    </button>
+</div>

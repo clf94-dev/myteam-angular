@@ -1,1 +1,7 @@
-<p>meet works!</p>
+<div class="meet-section">
+    <h3>Meet the directors</h3>
+    <div class="meet-row" fxLayout="row wrap">
+       <div *ngFor="let data of meets; let i=index">
+           <app-meet-card [name]="data.name" [position]="data.position" [description]="data.description" [src]="data.src" [ImgAlt]="data.imgAlt"></app-meet-card> </div>
+    </div>
+</div>

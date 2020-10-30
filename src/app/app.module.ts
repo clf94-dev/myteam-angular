@@ -19,6 +19,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { appRoutingProviders, routing } from './app.routing';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
+import { MeetCardComponent } from './components/meet-card/meet-card.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     TopHomeComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MeetCardComponent
   ],
   imports: [
     BrowserModule,

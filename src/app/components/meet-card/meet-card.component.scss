@@ -1,0 +1,115 @@
+//Colors--------------------------
+$Midnight-green: hsl(186, 98%, 17%);
+$Light-coral: hsl(0, 87%, 73%);
+$White: hsl(0, 0%, 100%);
+$Rapture-blue: hsl(179, 42%, 63%);
+$Police-blue: hsl(187, 41%, 29%);
+$Deep-jungle-green: hsl(186, 100%, 14%);
+$Sacramento-state-green: hsl(186, 96%, 10%);
+$Dark-green: hsl(186, 100%, 8%);
+//Font family ---------------------------
+$font-fam: 'Livvic',
+sans-serif;
+//Font sizes ------------------------------
+$h1-big: 100px;
+$h1-small: 64px;
+$h2-size: 30px;
+$h3-size: 18px;
+$body1-size: 18px;
+$body2-size: 15px;
+
+.card-col {
+margin: 0 40px;
+    width: 100% !important;
+    text-align: center;
+    .info-card1 {
+        &.show {
+            transition: all 0.3s ease;
+            display: block;
+        }
+        &.hide {
+            transition: all 0.3s ease;
+            display: none;
+        }
+        padding-top: 25px;
+        margin: 0 auto;
+        width: 400px;
+        height: 250px;
+        background-color: $Sacramento-state-green;
+        img {
+            width: 100px;
+            border: 2px solid $White;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: $body1-size;
+            font-family: $font-fam;
+            color: $Rapture-blue;
+            margin-bottom: 5px;
+        }
+        .position {
+            font-size: $body2-size;
+            font-family: $font-fam;
+            color: $White;
+        }
+    }
+    .info-card2 {
+        &.show {
+            transition: all 0.3s ease;
+            display: block;
+        }
+        &.hide {
+            transition: all 0.3s ease;
+            display: none !important;
+        }
+        margin: 0 auto;
+        padding-top: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: $Sacramento-state-green;
+        .name {
+            font-size: $body1-size;
+            font-family: $font-fam;
+            color: $Rapture-blue;
+            margin-bottom: 5px;
+        }
+        .description {
+            padding: 5% 10%;
+            font-size: $body2-size;
+            font-family: $font-fam;
+            color: $White;
+        }
+        .social-row {
+            margin-top: 15px;
+            justify-content: center;
+            i {
+                color: $White;
+                margin-right: 10px;
+                margin-left: 10px;
+                &:hover {
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    color: $Light-coral;
+                }
+            }
+        }
+    }
+    button {
+        &.coral {
+            background-color: $Light-coral;
+        }
+        &.light-blue {
+            background-color: $Rapture-blue;
+        }
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-radius: 50%;
+        position: relative;
+        top: -25px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
