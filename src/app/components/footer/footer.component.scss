@@ -1,0 +1,141 @@
+//Colors--------------------------
+$Midnight-green: hsl(186, 98%, 17%);
+$Light-coral: hsl(0, 87%, 73%);
+$White: hsl(0, 0%, 100%);
+$Rapture-blue: hsl(179, 42%, 63%);
+$Police-blue: hsl(187, 41%, 29%);
+$Deep-jungle-green: hsl(186, 100%, 14%);
+$Sacramento-state-green: hsl(186, 96%, 10%);
+$Dark-green: hsl(186, 100%, 8%);
+//Font family ---------------------------
+$font-fam: 'Livvic',
+sans-serif;
+//Font sizes ------------------------------
+$h1-big: 100px;
+$h1-small: 64px;
+$h2-size: 30px;
+$h3-size: 18px;
+$body1-size: 18px;
+$body2-size: 15px;
+//Footer component -------------------------
+.footer-section {
+    background-color: $Sacramento-state-green;
+    padding: 5% 7%;
+    @media screen and (max-width: 756px) {
+        text-align: center;
+    }
+   .logo-col {
+    @media screen and (min-width:800px){width: 25%;}
+    @media screen and (min-width:480px)and (max-width:800px){width: 50%;}
+    width: 100%;
+
+    img {
+        height: 30px;
+        margin-bottom: 15px;
+    }
+    .limks-row {
+        .link-col {
+      
+            margin-bottom: 20px;
+            .links {
+                text-align: center;
+                cursor: pointer;
+                color: $White;
+                &:hover {
+                    transition: all 0.3s ease;
+                    color: $Light-coral !important ;
+                }
+                &.home {
+                    @media screen and (max-width: 756px) {
+                        position: relative;
+                        left: 45px;
+                    }
+                }
+                &.about {
+                    @media screen and (max-width: 756px) {
+                        position: relative;
+                        left: -45px;
+                    }
+                }
+            }
+        }
+    }}
+    .dir-col {
+        @media screen and (min-width:800px){width: 25%;}
+        @media screen and (min-width:480px)and (max-width:800px){width: 50%;}
+        width: 100%;
+        @media screen and (max-width: 1080px) {
+            text-align: end;
+        }
+        @media screen and (max-width: 756px) {
+            text-align: center;
+        }
+        color: $White;
+        font-size: $body2-size;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+    .social-hidden-col {
+        @media screen and (min-width:800px){width: 25%;}
+        @media screen and (min-width:480px)and (max-width:800px){width: 50%;}
+        width: 100%;
+        .hidden {
+            @media screen and (min-width: 756px) and( max-width: 1080px) {
+                display: block;
+                color: $White;
+                i {
+                    cursor: pointer;
+                    margin-right: 10px;
+                    &:hover {
+                        transition: all 0.3s ease;
+                        color: $Light-coral;
+                    }
+                }
+            }
+            display: none;
+        }
+    }
+    .social-col {
+        @media screen and (min-width:800px){width: 25%;}
+        @media screen and (min-width:480px)and (max-width:800px){width: 50%;}
+        width: 100%;
+        .copy {
+            @media screen and (min-width:800px){width: 100%;}
+            @media screen and (min-width:480px)and (max-width:800px){width: 50%;}
+            width: 100%;
+            @media screen and (min-width: 756px) and( max-width: 1080px) {
+                text-align: end;
+                margin-left: 50%;
+            }
+            p {
+                font-size: 12px;
+                color: $White;
+                font-family: $font-fam;
+                font-weight: 300;
+            }
+        }
+        .social-row {
+            @media screen and (min-width:800px){width: 100%;}
+            @media screen and (min-width:480px)and (max-width:800px){width: 50%;}
+            width: 100%;
+            @media screen and (min-width: 1080px) {
+                margin-bottom: 40px;
+            }
+            margin-bottom: 10px;
+            @media screen and (min-width: 756px) and ( max-width: 1080px) {
+                display: none !important;
+            }
+            display: block;
+            color: $White;
+            margin-top: 10px;
+            i {
+                cursor: pointer;
+                margin-right: 10px;
+                &:hover {
+                    transition: all 0.3s ease;
+                    color: $Light-coral;
+                }
+            }
+        }
+    }
+}

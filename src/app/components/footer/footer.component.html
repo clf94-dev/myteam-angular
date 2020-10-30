@@ -1,1 +1,38 @@
-<p>footer works!</p>
+<div class="footer-section" fxLayout="row wrap">
+    <div class="logo-col" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="25%" fxFlex.lg="25%">
+        <img src="{{logo}}" alt="myteam">
+        <div class="links-row" fxLayout="row wrap">
+            <div [ngStyle]="{'width': '50%'}" class="link-col" fxFlex.xs="50%" fxFlex.sm="50%" fxFlex.md="50%" fxFlex.lg="50%">
+                <a style="color: white; text-decoration: 'none'" class="links home" [routerLink]="['/home']"> Home</a>
+            </div>
+            <div [ngStyle]="{'width': '50%'}" class="link-col" fxFlex.xs="50%" fxFlex.sm="50%" fxFlex.md="50%" fxFlex.lg="50%">
+                <a style="color: white; text-decoration: 'none'" class="links about" [routerLink]="['/about']"> About</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="dir-col" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="25%" fxFlex.lg="25%">
+        <p>987 Hillcrest Lane</p>
+        <p>Irvine, CA</p>
+        <p>California 92714</p>
+        <p>Call Us : 949-833-7432</p>
+    </div>
+    <div class="social-hidden-col" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="25%" fxFlex.lg="25%">
+
+        <div class='hidden'> <i class='fab fa-facebook'></i>
+            <i class='fab fa-pinterest'></i>
+            <i class='fab fa-twitter'></i>
+        </div>
+    </div>
+    <div class="social-col" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="25%" fxFlex.lg="25%" fxLayout="row wrap">
+        <div class="social-row" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="100%" fxFlex.lg="100%">
+            <i class='fab fa-facebook'></i>
+            <i class='fab fa-pinterest'></i>
+            <i class='fab fa-twitter'></i>
+        </div>
+        <div class="copy" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="100%" fxFlex.lg="100%">
+            <p>Copyright 2020. All Rights Reserved</p>
+
+        </div>
+    </div>
+</div>
