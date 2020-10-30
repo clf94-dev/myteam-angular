@@ -1,0 +1,55 @@
+//Colors--------------------------
+$Midnight-green: hsl(186, 98%, 17%);
+$Light-coral: hsl(0, 87%, 73%);
+$White: hsl(0, 0%, 100%);
+$Rapture-blue: hsl(179, 42%, 63%);
+$Police-blue: hsl(187, 41%, 29%);
+$Deep-jungle-green: hsl(186, 100%, 14%);
+$Sacramento-state-green: hsl(186, 96%, 10%);
+$Dark-green: hsl(186, 100%, 8%);
+//Font family ---------------------------
+$font-fam: 'Livvic',
+sans-serif;
+//Font sizes ------------------------------
+$h1-big: 100px;
+$h1-small: 64px;
+$h2-size: 30px;
+$h3-size: 18px;
+$body1-size: 18px;
+$body2-size: 15px;
+//Clients component ------------------------------
+.clients-section {
+    @media screen and (min-width: 755px) {
+        padding: 5% 7%;
+    }
+    padding: 10% 7%;
+    text-align: center;
+    background-color: $Sacramento-state-green;
+    h3 {
+        font-size: $h2-size;
+        font-family: $font-fam;
+        font-weight: 400;
+        color: $White;
+        margin-bottom: 20px;
+    }
+    .clients-row {
+        align-items: center;
+        .logo {
+            @media screen and (min-width:800px){width: 16% !important;}
+            @media screen and (min-width:480px)and (max-width:800px){width: 50%;}
+            width: 100%;
+            @media screen and (min-width: 755px) {
+                padding: 3% 2%;
+            }
+            padding: 5% 2%;
+            img {
+               width: 100%;
+                &:hover {
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
