@@ -1,1 +1,18 @@
-<p>features-home works!</p>
+<div class="features-section" fxLayout='row wrap'>
+    <div class="title-col" fxFlex.xs='100%' fxFlex.sm='50%'>
+        <hr/>
+        <h2>Build & manage distributed teams like no one else.</h2>
+    </div>
+    <div class="feat-col" fxFlex.xs='100%' fxFlex.sm='50%'>
+
+        <div class="feat-elem" fxLayout='row' *ngFor='let feat of features; let i=index'>
+            <div class="img-col" fxFlex.xs='20%' fxFlex.sm='20%'><img src="{{feat.src}}" alt="{{feat.imgAlt}}"> </div>
+            <div class="text-col" fxFlex.xs='80%' fxFlex.sm='80%'>
+                <h3>{{feat.title}}</h3>
+                <p>{{feat.text}}</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>

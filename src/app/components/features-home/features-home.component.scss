@@ -1,0 +1,92 @@
+//Colors--------------------------
+$Midnight-green: hsl(186, 98%, 17%);
+$Light-coral: hsl(0, 87%, 73%);
+$White: hsl(0, 0%, 100%);
+$Rapture-blue: hsl(179, 42%, 63%);
+$Police-blue: hsl(187, 41%, 29%);
+$Deep-jungle-green: hsl(186, 100%, 14%);
+$Sacramento-state-green: hsl(186, 96%, 10%);
+$Dark-green: hsl(186, 100%, 8%);
+//Font family ---------------------------
+$font-fam: 'Livvic',
+sans-serif;
+//Font sizes ------------------------------
+$h1-big: 100px;
+$h1-small: 64px;
+$h2-size: 30px;
+$h3-size: 18px;
+$body1-size: 18px;
+$body2-size: 15px;
+//HomeFeatures component--------------------------------
+.features-section {
+    padding: 5% 7%;
+    background-color: $Sacramento-state-green;
+    .title-col {
+        width: 50%;
+        margin-bottom: 50px;
+        hr {
+            width: 30px;
+            height: 5px;
+            margin-left: 0;
+            background-color: $Light-coral;
+            color: $Light-coral;
+            @media screen and (max-width: 1080px) {
+                margin-top: 2%;
+                margin-bottom: 9%;
+            }
+            margin-bottom: 5%;
+        }
+        h2 {
+            font-size: $h2-size;
+            font-family: $font-fam;
+            color: $White;
+            font-weight: 300;
+            @media screen and (max-width: 755px) {
+                padding-right: 40% !important;
+            }
+            @media screen and (max-width: 1080px) {
+                padding-right: 18%;
+            }
+            padding-right: 35%;
+        }
+    }
+    .feat-col {
+        width: 50%;
+        .feat-elem {
+            @media screen and (max-width: 755px) {
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            padding : 1% 3%;
+            .img-col {
+                align-self: center !important;
+                img {
+                    width: 60px !important;
+                }
+                @media screen and (max-width:755px) {
+                    margin-bottom: 20px;
+                }
+            }
+            .text-col {
+                padding-left: 25px;
+                h3 {
+                    font-size: $h3-size;
+                    font-family: $font-fam;
+                    color: $Light-coral;
+                    font-weight: 400;
+                    margin-bottom: 7px;
+                }
+                p {
+                    font-size: $body2-size;
+                    font-family: $font-fam;
+                    color: $White;
+                    font-weight: 300;
+                    line-height: 1.5rem;
+                    @media screen and (max-width: 755px) {
+                        padding: 0 5%;
+                    }
+                }
+            }
+        }
+    }
+}
