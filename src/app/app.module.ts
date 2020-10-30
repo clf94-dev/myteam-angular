@@ -13,6 +13,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { OpinionsComponent } from './components/opinions/opinions.component';
 import { TopAboutComponent } from './components/top-about/top-about.component';
 import { TopHomeComponent } from './components/top-home/top-home.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { AboutComponent } from './components/pages/about/about.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { TopHomeComponent } from './components/top-home/top-home.component';
     NavbarComponent,
     OpinionsComponent,
     TopAboutComponent,
-    TopHomeComponent
+    TopHomeComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule
