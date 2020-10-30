@@ -1,1 +1,21 @@
-<p>opinions works!</p>
+<div class="opinions-section" fxLayout='row wrap'>
+    <div class="title">
+
+        <h2>Delivering real results for top companies. Some of our
+            <h2 class='color'>success stories.</h2>
+        </h2>
+    </div>
+    <div class="opinions-row" fxLayout="row wrap">
+        <div class="opinion-col" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="33%" fxFlex.lg="33%" *ngFor='let opinion of opinions; let i=index'>
+
+            <img class='quotes' src="{{quotes}}" alt="quotes" />
+            <p>
+                {{opinion.text}}</p>
+            <h3>{{opinion.name}}
+            </h3>
+            <p class='position'>{{opinion.position}}
+            </p>
+            <img class='avatar' src="{{opinion.src}}" alt="{{opinion.imgAlt}}" />
+
+        </div>
+    </div>
