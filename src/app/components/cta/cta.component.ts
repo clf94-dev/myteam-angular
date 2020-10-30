@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-cta',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CtaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _route : ActivatedRoute, private _router : Router) { }
 
   ngOnInit(): void {
   }
-
+  goToContact(){
+    this._router.navigate(['/contact']);
+  }
 }
