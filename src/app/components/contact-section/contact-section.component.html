@@ -1,1 +1,21 @@
-<p>contact-section works!</p>
+<div class="contact-section" fxLayout='row wrap'>
+    <div class="askabout-col" fxFlex.xs='100%' fxFlex.sm='50%' fxFlex.md="50%" fxFlex.lg="50%">
+
+        <h2>Contact</h2>
+        <h3>Ask us about</h3>
+
+        <div class="feat-elem" fxLayout='row' *ngFor='let feat of features; let i=index'>
+            <div class="img-col" fxFlex.xs='20%' fxFlex.sm='20%'><img src="{{feat.src}}" alt="{{feat.imgAlt}}"> </div>
+            <div class="text-col" fxFlex.xs='80%' fxFlex.sm='80%'>
+
+                <p>{{feat.text}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-col" fxFlex.xs='100%' fxFlex.sm='50%' fxFlex.md="50%" fxFlex.lg="50%">
+        <app-form></app-form>
+    </div>
+
+
+
+</div>
