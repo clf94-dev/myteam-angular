@@ -1,1 +1,28 @@
-<p>form works!</p>
+<form class="form-col" fxLayout="column" #userform="ngForm" (ngSubmit)="onSubmit()">
+    <input required pattern="[a-zA-Z]+"#name="ngModel" [(ngModel)]="user.name" [ngStyle]="{borderBottomColor: !name.valid && name.touched|| submitClicked && name.untouched? 'hsl(0, 87%, 73%)': 'black'}" [ngClass]="!name.valid && name.touched|| submitClicked && name.untouched? 'error':''" type="text" name="name" placeholder="Name" />
+    <small *ngIf="!name.valid && name.touched || submitClicked && name.untouched" style="color: 'hsl(0, 87%, 73%)'">
+      Name not valid
+    </small>
+    <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #email="ngModel" [(ngModel)]="user.email" [ngStyle]="{borderBottomColor: !email.valid && email.touched || submitClicked && email.untouched? 'hsl(0, 87%, 73%)': 'black'}" [ngClass]="!email.valid && email.touched || submitClicked && email.untouched? 'error':''" type="email" name="email" id="" placeholder="Email Address" />
+    <small *ngIf="!email.valid && email.touched || submitClicked && email.untouched"  style="color: 'hsl(0, 87%, 73%)'">
+      Email address not valid
+    </small>
+    <input type="text" name="" id="" placeholder="Company Name" />
+    <input type="text" placeholder="Title" />
+    <textarea
+    #message="ngModel" [(ngModel)]="user.message"
+    required
+      name="message"
+      id=""
+      cols="30"
+      rows="10"
+      placeholder="Message"
+      [ngStyle]="{borderBottomColor: !message.valid && message.touched|| submitClicked && message.untouched? 'hsl(0, 87%, 73%)': 'black'}"
+      [ngClass]="!message.valid && message.touched|| submitClicked && message.untouched? 'error':'' "
+    ></textarea>
+    <small *ngIf="!message.valid && message.touched|| submitClicked && message.untouched" style="color: 'hsl(0, 87%, 73%)'">
+      Message can't be empty
+    </small>
+    
+    <button type="submit" class="submit-btn"> Submit </button>
+  </form>

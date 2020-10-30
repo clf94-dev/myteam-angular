@@ -1,0 +1,70 @@
+
+//Colors--------------------------
+$Midnight-green: hsl(186, 98%, 17%);
+$Light-coral: hsl(0, 87%, 73%);
+$White: hsl(0, 0%, 100%);
+$Rapture-blue: hsl(179, 42%, 63%);
+$Police-blue: hsl(187, 41%, 29%);
+$Deep-jungle-green: hsl(186, 100%, 14%);
+$Sacramento-state-green: hsl(186, 96%, 10%);
+$Dark-green: hsl(186, 100%, 8%);
+//Font family ---------------------------
+$font-fam: 'Livvic',
+sans-serif;
+//Font sizes ------------------------------
+$h1-big: 100px;
+$h1-small: 64px;
+$h2-size: 30px;
+$h3-size: 18px;
+$body1-size: 18px;
+$body2-size: 15px;
+
+input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: $font-fam;
+    color: $White;
+    border-bottom: 1px solid $Police-blue;
+    background-color: transparent;
+    height: 50px;
+    margin-bottom: 15px;
+    &.error{
+        &::placeholder{
+            color: $Light-coral;
+        }
+    }
+}
+textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: $font-fam;
+    color: $White;
+    border-bottom: 1px solid $Police-blue;
+    background-color: transparent;
+    margin-bottom: 35px;
+    &.error{
+        &::placeholder{
+            color: $Light-coral;
+        }
+    }
+}
+.submit-btn {
+    margin-top: 3%;
+    margin-bottom: 10%;
+    color: $White;
+    border: 1px solid $Sacramento-state-green;
+    background-color: $Sacramento-state-green;
+    border-radius: 25px;
+    height: 50px;
+    width: 200px;
+    font-family: $font-fam;
+    &:hover {
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background-color: $White;
+        color: $Midnight-green;
+        border: 1px solid $White;
+    }
+}

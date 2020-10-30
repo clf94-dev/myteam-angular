@@ -21,7 +21,7 @@ $body2-size: 15px;
 .contact-section {
     padding: 5% 9%;
     .askabout-col {
-        @media screen and (min-width:800px){width: 50%;}
+        @media screen and (min-width:800px){width: 45%;}
     width: 100%;
         h2 {
             @media screen and (max-width: 1080px) {
@@ -73,50 +73,13 @@ $body2-size: 15px;
         }
     }
     .form-col {
-        @media screen and (min-width:800px){width: 50%;}
+        @media screen and (min-width:800px){width: 45% ;}
         width: 100%;
         @media screen and (min-width: 1081px) {
             padding: 2% 5%;
         }
         padding-top: 3%;
-        input {
-            width: 100%;
-            outline: none;
-            border: none;
-            font-family: $font-fam;
-            color: $White;
-            border-bottom: 1px solid $Police-blue;
-            background-color: transparent;
-            height: 50px;
-            margin-bottom: 15px;
-        }
-        textarea {
-            width: 100%;
-            outline: none;
-            border: none;
-            font-family: $font-fam;
-            color: $White;
-            border-bottom: 1px solid $Police-blue;
-            background-color: transparent;
-            margin-bottom: 35px;
-        }
+      
     }
-    .submit-btn {
-        margin-top: 3%;
-        margin-bottom: 10%;
-        color: $White;
-        border: 1px solid $Sacramento-state-green;
-        background-color: $Sacramento-state-green;
-        border-radius: 25px;
-        height: 50px;
-        width: 200px;
-        font-family: $font-fam;
-        &:hover {
-            cursor: pointer;
-            transition: all 0.2s ease;
-            background-color: $White;
-            color: $Midnight-green;
-            border: 1px solid $White;
-        }
-    }
+    
 }
