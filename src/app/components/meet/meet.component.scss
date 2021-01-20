@@ -19,6 +19,9 @@ $body1-size: 18px;
 $body2-size: 15px;
 //MeetSection component ---------------------------
 .meet-section {
+    @media screen and (max-width: 600px) {
+        padding: 5%;
+    }
     padding: 5% 7%;
     h3 {
         text-align: center;
@@ -29,5 +32,8 @@ $body2-size: 15px;
         margin-bottom: 50px;
     }
     .meet-row {
-@media screen and (min-width:480px){padding-left: 2%;}
-    }}
+        @media screen and (min-width: 480px) {
+            padding-left: 2%;
+        }
+    }
+}

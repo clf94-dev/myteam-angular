@@ -17,9 +17,11 @@ $h2-size: 30px;
 $h3-size: 18px;
 $body1-size: 18px;
 $body2-size: 15px;
-
 .card-col {
-margin: 0 40px;
+    @media screen and (max-width: 600px) {
+        margin: 0;
+    }
+    margin: 0 20px;
     width: 100% !important;
     text-align: center;
     .info-card1 {
@@ -108,6 +110,10 @@ margin: 0 40px;
         border-radius: 50%;
         position: relative;
         top: -25px;
+        @media screen and (max-width: 600px) {
+            left: 0;
+        }
+        left: 90%;
         &:hover {
             cursor: pointer;
         }

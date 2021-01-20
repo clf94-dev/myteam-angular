@@ -1,0 +1,24 @@
+.meet-section {
+  padding: 5% 7%;
+}
+
+@media screen and (max-width: 600px) {
+  .meet-section {
+    padding: 5%;
+  }
+}
+
+.meet-section h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .meet-section .meet-row {
+    padding-left: 2%;
+  }
+}
