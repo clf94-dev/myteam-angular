@@ -24,6 +24,7 @@
     "@angular/router": "~10.1.6",
     "@fortawesome/fontawesome-free": "^5.15.1",
     "aos": "^2.3.4",
+    "netlify-cli": "^3.2.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

@@ -52,6 +52,10 @@ $body2-size: 15px;
         }
         .menu-icon {
             display: none;
+            .nav-btn {
+                background-color: $Midnight-green;
+                border: none;
+            }
             @media screen and (max-width: 756px) {
                 display: block;
                 position: absolute;

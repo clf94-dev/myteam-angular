@@ -4,17 +4,20 @@
             <img src="{{logo}}" alt="myteam" (click)='goToHome()' />
         </div>
         <div class="menu-icon">
-            <i class='fas fa-bars'></i>
+            <button class="nav-btn" (click)="handleClick()">
+            <i [class]="click? 'fas fa-2x fa-times':'fas fa-2x fa-bars' "></i>
+          </button>
         </div>
-        <ul class='nav-menu'>
-            <li class="nav-item" (click)='goToHome()'>
+        <ul [class]="click?'nav-menu active' :'nav-menu'">
+            <li class="nav-item" (click)='closeMobile()'>
                 <a class="nav-links" [routerLink]="['/home']" [routerLinkActive]="['active']"> Home</a>
 
             </li>
-            <li class="nav-item">
+            <li class="nav-item" (click)='closeMobile()'>
                 <a class="nav-links" [routerLink]="['/about']" [routerLinkActive]="['active']"> About</a>
             </li>
-            <button class='transparent-btn' (click)='goToContact()'>  Contact Us</button>
+            <li (click)='closeMobile()'><button class='transparent-btn' (click)='goToContact()'>  Contact Us</button>
+            </li>
         </ul>
 
     </div>
